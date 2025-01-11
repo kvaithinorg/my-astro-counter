@@ -1,11 +1,17 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Counter from '../components/Counter';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width' />
+    <title>Astro Counter</title>
+  </head>
+  <body>
+    <main>
+      <h1>Astro Counter</h1>
+      <Counter client:load />
+    </main>
+  </body>
+</html>
